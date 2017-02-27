@@ -23,13 +23,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,10 +39,12 @@
                 android:textColor="@android:color/black"
                 android:textSize="25dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,13 +75,50 @@
                 android:layout_height="wrap_content"
                 android:hint="Number" />
 
-            <Button
-                android:id="@+id/Button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+
+
+                <ToggleButton
+                    android:id="@+id/toggle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check_crystal"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff=""
+                    android:layout_weight="1"
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/toggle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check_heart"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff=""
+                    android:layout_weight="1"
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/toggle3"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/check_skull"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -96,13 +136,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button2"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -128,13 +186,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -151,13 +227,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -180,13 +274,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -203,13 +315,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -232,13 +362,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -255,13 +403,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -284,14 +450,31 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -307,18 +490,38 @@
                 android:hint="Number"
                 android:text="" />
 
-            <Button
-                android:id="@+id/Button10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:onClick="startRullete"
-                android:text="check" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -327,7 +530,43 @@
             android:text="Scores"
             android:textColor="@android:color/black"
             android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/summTeamA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/summTeamB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -335,30 +574,25 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/summTeamA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""/>
-        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/summTeamB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="startImage"
+                android:text="check images" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="startRullete"
+                android:text="check scores" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
