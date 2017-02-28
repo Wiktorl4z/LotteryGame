@@ -4,7 +4,9 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/game1"
     android:orientation="vertical"
+    android:paddingTop="50dp"
     tools:context="com.example.l4z.lotterygame.MainActivity">
 
     <TextView
@@ -12,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Let's see who is more lucky"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="20dp" />
 
     <LinearLayout
@@ -34,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Team A"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/holo_orange_dark"
                 android:textSize="25dp" />
 
             <LinearLayout
@@ -61,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Team B"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/holo_orange_dark"
                 android:textSize="25dp" />
 
             <LinearLayout
@@ -84,8 +86,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Scores"
-            android:textColor="@android:color/black"
-            android:textSize="20dp" />
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,7 +105,8 @@
                     android:id="@+id/summTeamA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="30sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,10 +119,10 @@
                     android:id="@+id/summTeamB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:text=""
+                    android:textSize="30sp" />
             </LinearLayout>
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,24 +130,18 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:onClick="startImage"
-                    android:text="check images" />
-
-                <Button
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:onClick="showScores"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/play_button"
                     android:text="check scores" />
             </LinearLayout>
         </LinearLayout>

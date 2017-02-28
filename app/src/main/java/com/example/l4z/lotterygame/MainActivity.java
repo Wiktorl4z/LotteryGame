@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,37 +58,10 @@ public class MainActivity extends AppCompatActivity {
         for (SelectionBox sb : teamB) {
             b += sb.getScore();
         }
-        summTeamA.setText(a+"");
-        summTeamB.setText(b+"");
+        summTeamA.setText(a + "");
+        summTeamB.setText(b + "");
 
     }
-
-    /*CompoundButton.OnCheckedChangeListener changeChecker = new CompoundButton.OnCheckedChangeListener() {*/
-
-     /*   @Override
-        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-            if (isChecked) {
-                switch (buttonView){
-                    case 1:
-                        buttonView == toggle1;
-                        toggle2.setChecked(false);
-                        toggle3.setChecked(false);
-                        break;
-                    case 2:
-                        (buttonView == toggle2) {
-                        toggle1.setChecked(false);
-                        toggle3.setChecked(false);
-
-                    }
-                    if (buttonView == toggle3) {
-                        toggle1.setChecked(false);
-                        toggle2.setChecked(false);
-                    }
-
-                }
-            }
-        }*/
-
 }
 
 
