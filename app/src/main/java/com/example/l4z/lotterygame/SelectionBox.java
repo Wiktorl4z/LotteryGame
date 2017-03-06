@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
 import java.util.Random;
 
 public class SelectionBox extends Fragment {
@@ -76,11 +77,15 @@ public class SelectionBox extends Fragment {
     public int getScore() {
         score.setVisibility(View.VISIBLE);
         if (toggle1.isChecked()) {
-            return drawnNumber * 2;
-
+            boolean a;
+            a = random.nextBoolean();
+            if (a == true) {
+                return drawnNumber * 4;
+            }
+            return drawnNumber;
         }
         if (toggle2.isChecked()) {
-            return drawnNumber * 3;
+            return drawnNumber * 2;
         }
         if (toggle3.isChecked()) {
             int i = 0;

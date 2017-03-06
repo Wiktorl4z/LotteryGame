@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Lottery Game</string>
+    <string name="green_crystal_text">Pick crystal, here you have 50% to get multiple points x4, If you are unlucky gona have same amount of points like on beginning.</string>
+    <string name="be_rich_or_dead">BE RICH OR DEAD!</string>
+    <string name="rich_text">BE RICH OR LOSE EVERYTHING Here you have only 20% win chance but you can get multiple points x10!</string>
+    <string name="heart_text">Make love not war! Pick this one your are gona get multiple point x2. Chance is 100% everytime!</string>
+    <string name="starting_text">Select your items and check who will win more points!</string>
 </resources>

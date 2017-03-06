@@ -1,12 +1,11 @@
 package com.example.l4z.lotterygame;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,11 +13,13 @@ public class MainActivity extends AppCompatActivity {
     private TextView summTeamA, summTeamB;
     private ArrayList<SelectionBox> teamA, teamB;
     private LinearLayout teamViewA, teamViewB;
+    private MediaPlayer mp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.game_layout);
 
         teamViewA = (LinearLayout) findViewById(R.id.TeamAContainer);
         teamViewB = (LinearLayout) findViewById(R.id.TeamBContainer);
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showScores(View view) {
+        playSound(Sound.FIGHT);
+
         int a = 0, b = 0;
         for (SelectionBox sb : teamA) {
             a += sb.getScore();
@@ -61,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
         summTeamA.setText(a + "");
         summTeamB.setText(b + "");
 
+    }
+
+    protected void playSound(Sound sound) {
+        if (mp != null) {
+            mp.reset();
+            mp.release();
+        }
+        mp = MediaPlayer.create(this, sound.getSound());
+        mp.start();
     }
 }
 
