@@ -1,6 +1,5 @@
 package com.example.l4z.lotterygame;
 
-
 import android.app.Fragment;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -14,12 +13,12 @@ import java.util.Random;
 
 public class SelectionBox extends Fragment {
 
-    private static Random random = new Random();
+    private Random random = new Random();
     private ToggleButton toggle1, toggle2, toggle3;
     private TextView score;
     private int drawnNumber;
     private MediaPlayer mp;
-
+    private int points;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,8 +36,8 @@ public class SelectionBox extends Fragment {
         toggle2.setOnClickListener(listener);
         toggle3.setOnClickListener(listener);
 
-
-        startRullete(0, 100);
+        points = getArguments().getInt("points");
+        score.setText(points + "");
         return rootView;
     }
 
@@ -67,11 +66,6 @@ public class SelectionBox extends Fragment {
             }
         };
         return l;
-    }
-
-    private void startRullete(int min, int max) {
-        drawnNumber = min + random.nextInt(max - min + 1);
-        score.setText(drawnNumber + "");
     }
 
     public int getScore() {
