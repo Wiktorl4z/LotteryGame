@@ -16,7 +16,6 @@ public class SelectionBox extends Fragment {
     private Random random = new Random();
     private ToggleButton toggle1, toggle2, toggle3;
     private TextView score;
-    private int drawnNumber;
     private MediaPlayer mp;
     private int points;
 
@@ -24,20 +23,16 @@ public class SelectionBox extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_selection_box, container, false);
 
-
         toggle1 = (ToggleButton) rootView.findViewById(R.id.toggle1);
         toggle2 = (ToggleButton) rootView.findViewById(R.id.toggle2);
         toggle3 = (ToggleButton) rootView.findViewById(R.id.toggle3);
         score = (TextView) rootView.findViewById(R.id.score);
-
 
         View.OnClickListener listener = getOnClickListener();
         toggle1.setOnClickListener(listener);
         toggle2.setOnClickListener(listener);
         toggle3.setOnClickListener(listener);
 
-        points = getArguments().getInt("points");
-        score.setText(points + "");
         return rootView;
     }
 
@@ -71,29 +66,21 @@ public class SelectionBox extends Fragment {
     public int getScore() {
         score.setVisibility(View.VISIBLE);
         if (toggle1.isChecked()) {
-            boolean a;
-            a = random.nextBoolean();
-            if (a == true) {
-                return drawnNumber * 4;
+            int i = 0;
+            i = random.nextInt(100);
+            if (i < 50) {
+                return points * 4;
             }
-            return drawnNumber;
+            return 0;
         }
         if (toggle2.isChecked()) {
-            return drawnNumber * 2;
+            return points * 2;
         }
         if (toggle3.isChecked()) {
             int i = 0;
-            boolean a;
-            do {
-                a = random.nextBoolean();
-                if (a == true) {
-                    a = random.nextBoolean();
-                    i++;
-                }
-            }
-            while (a && i < 2);
-            {
-                return a ? drawnNumber * 10 : 0;
+            i = random.nextInt(100);
+            if (i < 20) {
+                return points * 10;
             }
         }
         return 0;
@@ -106,6 +93,11 @@ public class SelectionBox extends Fragment {
         }
         mp = MediaPlayer.create(getActivity(), sound.getSound());
         mp.start();
+    }
+
+    public void setNewPoints(int points) {
+        this.points = points;
+        score.setText(points + "");
     }
 }
 

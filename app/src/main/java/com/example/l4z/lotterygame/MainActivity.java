@@ -2,7 +2,7 @@ package com.example.l4z.lotterygame;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -25,39 +25,48 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_layout);
 
-
-
         teamViewA = (LinearLayout) findViewById(R.id.TeamAContainer);
         teamViewB = (LinearLayout) findViewById(R.id.TeamBContainer);
 
         summTeamA = (TextView) findViewById(R.id.summTeamA);
         summTeamB = (TextView) findViewById(R.id.summTeamB);
 
-        List<Integer> points = new ArrayList<>();
-        for (int i = 0;  i < 5; i++){
-            points.add(generateRandomPoint());
-        }
-
         teamA = new ArrayList<>();
-        for (int i = 0; i < 5; i++){
-            SelectionBox sb = new SelectionBox();
-            Bundle args = new Bundle();
-            args.putInt("points", points.get(i));
-            sb.setArguments(args);
-            teamA.add(sb);
-        }
-
         teamB = new ArrayList<>();
         for (int i = 0; i < 5; i++){
-            SelectionBox sb = new SelectionBox();
-            Bundle args = new Bundle();
-            args.putInt("points", points.get(i));
-            sb.setArguments(args);
-            teamB.add(sb);
+            SelectionBox sbA = new SelectionBox();
+            SelectionBox sbB = new SelectionBox();
+            teamA.add(sbA);
+            teamB.add(sbB);
         }
 
         addToView(teamA, teamViewA);
         addToView(teamB, teamViewB);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        restartPoints();
+    }
+
+    @NonNull
+    private List<Integer> getRandomPoints() {
+        List<Integer> points = new ArrayList<>();
+        for (int i = 0;  i < 5; i++){
+            points.add(generateRandomPoint());
+        }
+        return points;
+    }
+
+    private void restartPoints(){
+        List<Integer> points = getRandomPoints();
+        for (int i = 0; i < 5; i++){
+            SelectionBox sbA = teamA.get(i);
+            sbA.setNewPoints(points.get(i));
+            SelectionBox sbB = teamB.get(i);
+            sbB.setNewPoints(points.get(i));
+        }
     }
 
     private void addToView(List<SelectionBox> list, View view) {
@@ -79,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         }
         summTeamA.setText(a + "");
         summTeamB.setText(b + "");
+
+        restartPoints();
     }
 
     protected void playSound(Sound sound) {
@@ -92,9 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int generateRandomPoint() {
         return MIN + random.nextInt(MAX - MIN + 1);
-
     }
-
 }
 
 
