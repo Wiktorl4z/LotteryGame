@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Let's see who is more lucky"
+        android:text="@string/let_see_who_is"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="20dp" />
 
