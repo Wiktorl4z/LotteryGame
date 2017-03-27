@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dobre"
+    android:background="@drawable/blue_water"
     android:layout_weight="3"
     android:orientation="vertical">
 
@@ -17,6 +17,15 @@
 
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ABDD93" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -64,6 +73,15 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ABDD93" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -79,6 +97,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@android:color/black" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,6 +127,15 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/black" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ABDD93" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -117,7 +145,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:src="@drawable/skull_green" />
+            android:src="@drawable/skull_yellow" />
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
@@ -132,20 +160,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:textColor="#000000"
+                android:textColor="#F9FF23"
                 android:textAllCaps="true"
                 android:gravity="center"
                 android:text="@string/be_rich_or_dead" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:textColor="#000000"
+                android:textColor="#F9FF23"
                 android:gravity="center"
                 android:layout_height="match_parent"
                 android:text="@string/rich_text" />
         </LinearLayout>
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ABDD93" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
