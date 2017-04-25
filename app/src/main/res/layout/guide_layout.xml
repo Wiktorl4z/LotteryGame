@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blue_water"
     android:layout_weight="3"
     android:orientation="vertical">
-
 
     <TextView
         android:layout_width="match_parent"
@@ -15,8 +15,6 @@
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="50dp" />
 
-
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -25,7 +23,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#ABDD93" />
+        android:background="@color/colorLightGreen" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -58,13 +56,13 @@
                 android:gravity="center"
                 android:textSize="20dp"
                 android:textAllCaps="true"
-                android:textColor="#13EA13"
+                android:textColor="@color/colorMediumGreen"
                 android:text="@string/green_crystal" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textColor="#13EA13"
+                android:textColor="@color/colorMediumGreen"
                 android:gravity="center"
                 android:text="@string/green_crystal_text" />
         </LinearLayout>
@@ -77,7 +75,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#ABDD93" />
+        android:background="@color/colorGreenLight" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -109,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textColor="#FC1425"
+                android:textColor="@color/colorRed"
                 android:text="@string/lovely_heart"
                 android:textAllCaps="true"
                 android:id="@+id/textView" />
@@ -118,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="#FC1425"
+                android:textColor="@color/colorRed"
                 android:text="@string/heart_text" />
         </LinearLayout>
 
@@ -131,7 +129,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#ABDD93" />
+        android:background="@color/colorLightGreen" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -160,14 +158,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:textColor="#F9FF23"
+                android:textColor="@color/colorYellow"
                 android:textAllCaps="true"
                 android:gravity="center"
                 android:text="@string/be_rich_or_dead" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:textColor="#F9FF23"
+                android:textColor="@color/colorYellow"
                 android:gravity="center"
                 android:layout_height="match_parent"
                 android:text="@string/rich_text" />
@@ -182,7 +180,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#ABDD93" />
+        android:background="@color/colorLightGreen" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -192,7 +190,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Start Game"
+        android:text="@string/start_game"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="50dp" />
 </LinearLayout>

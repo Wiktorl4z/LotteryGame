@@ -15,10 +15,10 @@
         android:text="Start" />
 
     <Button
-        android:layout_marginTop="13dp"
         android:id="@+id/guide_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:background="@drawable/my_button"
         android:onClick="onGuideClick"
         android:text="Guide" />

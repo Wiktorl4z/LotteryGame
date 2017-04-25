@@ -22,6 +22,5 @@ public class Guide extends AppCompatActivity {
                 startActivity(colorsIntent);
             }
         });
-
     }
 }

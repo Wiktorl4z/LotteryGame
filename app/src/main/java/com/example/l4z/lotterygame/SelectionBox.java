@@ -14,7 +14,9 @@ import java.util.Random;
 public class SelectionBox extends Fragment {
 
     private Random random = new Random();
-    private ToggleButton toggle1, toggle2, toggle3;
+    private ToggleButton toggle1;
+    private ToggleButton toggle2;
+    private ToggleButton toggle3;
     private TextView score;
     private MediaPlayer mp;
     private int points;

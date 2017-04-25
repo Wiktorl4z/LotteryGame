@@ -8,5 +8,8 @@
     <string name="green_crystal">Green Crystal</string>
     <string name="lovely_heart">Lovely Heart</string>
     <string name="guide">Guide</string>
+    <string name="scores">Scores</string>
     <string name="let_see_who_is">Let\'s see who is more lucky</string>
+    <string name="check_scores">check scores</string>
+    <string name="start_game">Start Game</string>
 </resources>
